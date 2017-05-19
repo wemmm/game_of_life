@@ -9,7 +9,7 @@ class World
     @board.count(1)
   end
 
-  def is_alive?
-
+  def is_alive?(x, y)
+    return false if @board[x][y] == 0
   end
 end

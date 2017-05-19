@@ -12,7 +12,7 @@ describe World do
 
   describe '#is_alive?' do
     it 'returns false if a cell is dead (equal to 0)' do
-      expect(subject.is_alive?(x, y)).to eq false
+      expect(subject.is_alive?(0, 0)).to eq false
     end
   end
 
