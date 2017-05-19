@@ -11,5 +11,6 @@ class World
 
   def is_alive?(x, y)
     return false if @board[x][y] == 0
+    true
   end
 end

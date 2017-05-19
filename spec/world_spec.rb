@@ -11,8 +11,14 @@ describe World do
   end
 
   describe '#is_alive?' do
-    it 'returns false if a cell is dead (equal to 0)' do
+    it 'returns false if a cell is dead' do
       expect(subject.is_alive?(0, 0)).to eq false
+    end
+
+    it 'returns true if a cell is alive' do
+      world = World.new
+      @board[0][0] + 1
+      expect(subject.is_alive?(0,0)).to eq true
     end
   end
 
