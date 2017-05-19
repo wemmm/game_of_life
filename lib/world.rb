@@ -9,7 +9,7 @@ class World
     @board.count(1)
   end
 
-  def generate_living_cells
+  def is_alive?
 
   end
 end

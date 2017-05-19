@@ -9,5 +9,11 @@ describe World do
       expect(subject.board).not_to eq nil
     end
   end
-  
+
+  describe '#is_alive?' do
+    it 'returns false if a cell is dead (equal to 0)' do
+      expect(subject.is_alive?(x, y)).to eq false
+    end
+  end
+
 end
